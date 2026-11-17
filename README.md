@@ -1,6 +1,6 @@
 # ESX Support Reports & Staff Analytics
 
-![Version](https://img.shields.io/badge/version-1.2.0-blue) ![License](https://img.shields.io/badge/license-GPL--3.0-green)
+![Version](https://img.shields.io/badge/version-1.3.0-blue) ![License](https://img.shields.io/badge/license-GPL--3.0-green)
 
 A dedicated player support ticketing and staff productivity analytics resource for FiveM servers running **ESX Legacy**.
 

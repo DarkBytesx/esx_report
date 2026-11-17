@@ -125,7 +125,7 @@ end)
 xLib.nui.register("getReports", function(data, cb)
 	xLib.callback("esx_report:server:getReports", false, function(res)
 		if not res or not res.success then
-			cb({ success = false, reports = {}, openCount = 0, onlineStaff = [] })
+			cb({ success = false, reports = {}, openCount = 0, onlineStaff = {} })
 			return
 		end
 		cb(res)

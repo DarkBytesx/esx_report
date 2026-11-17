@@ -8,7 +8,7 @@ lua54("yes")
 author("ESX Framework")
 name("esx_report")
 description("ESX Report System & Staff Analytics")
-version("1.2.0")
+version("1.3.0")
 legacyversion("1.16.0")
 
 shared_scripts({
