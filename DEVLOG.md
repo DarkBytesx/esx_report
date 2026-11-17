@@ -2,13 +2,21 @@
 
 **Resource:** `esx_report`  
 **Base:** ESX Legacy  
-**Version:** v1.0.0 (Initial Release)  
+**Version:** v1.1.0  
 **Date:** November 17, 2026  
 **Status:** Production Verified  
 
 ---
 
-## 1. Initial Release v1.0.0
+## 1. Release v1.1.0 - Auto Database Injection & MySQL.ready Hook
+
+* **Auto-Injection Guarantee**: Wired `server/database.lua` to `MySQL.ready`, eliminating any race condition with `oxmysql` on initial server boot.
+* **Redundant Restart Protection**: Added duplicate check guards so restarting the resource mid-session safely verifies tables without re-running initialization.
+* **Standalone SQL Script**: Provided [esx_report.sql](file:///c:/Users/Raven/Downloads/New%20Server%20Pack/txData/ESXLegacy_E69671.base/resources/[esx_addons]/esx_report/esx_report.sql) in resource root for manual reference or standalone imports.
+
+---
+
+## 2. Release v1.0.0 - Initial Release
 
 Initial release of `esx_report`, a lightweight, standalone player support ticketing and staff productivity analytics resource for FiveM servers running ESX Legacy.
 

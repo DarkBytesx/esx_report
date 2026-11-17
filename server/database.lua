@@ -1,7 +1,9 @@
 -- SPDX-License-Identifier: GPL-3.0-only
 -- Copyright (C) 2022-2026 ESX Framework
 
--- Initiate / migrate the report database schema.
+-- Initiate / migrate the report database schema automatically.
+
+local dbInitialized = false
 
 local function columnExists(tableName, columnName)
 	local count = Helpers.safeScalar(
@@ -76,13 +78,30 @@ local function initDB()
 	]])
 
 	ensureReportColumns()
-	print("[esx_report] Report database tables/indexes checked/created!")
+	print("[esx_report] Report database tables/indexes auto-injected & verified!")
 end
 
+local function runInit()
+	if dbInitialized then
+		return
+	end
+
+	local ok, err = pcall(initDB)
+	if ok then
+		dbInitialized = true
+	else
+		print(("[esx_report] Database initialization error: %s"):format(tostring(err)))
+	end
+end
+
+-- oxmysql connection ready hook
+MySQL.ready(runInit)
+
+-- Resource restart hook
 AddEventHandler("onResourceStart", function(resource)
 	if resource ~= GetCurrentResourceName() then
 		return
 	end
 
-	pcall(initDB)
+	runInit()
 end)
