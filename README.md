@@ -1,6 +1,6 @@
 # ESX Support Reports & Staff Analytics
 
-![Version](https://img.shields.io/badge/version-1.4.0-blue) ![License](https://img.shields.io/badge/license-GPL--3.0-green)
+![Version](https://img.shields.io/badge/version-1.5.0-blue) ![License](https://img.shields.io/badge/license-GPL--3.0-green)
 
 A dedicated player support ticketing and staff productivity analytics resource for FiveM servers running **ESX Legacy**.
 
@@ -69,4 +69,4 @@ Built with a direct 3-column Svelte 5 NUI workspace, proximity suspect detection
 
 ## 📦 Dependencies
 * **Required**: `es_extended`, `oxmysql`
-* **Optional Webhook**: Discord Webhook URL for external ticket logging in `shared/config.lua`.
+* **Optional Discord Webhook**: Set your ticket webhook securely in `server/config.lua` or in `server.cfg` via `set esx_report:webhook "https://discord.com/api/webhooks/..."` (never exposed to client cache).

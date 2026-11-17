@@ -55,7 +55,8 @@ local function isStaffMember(src, grp)
 end
 
 local function sendDiscordWebhook(reportId, title, reporterName, reporterId, targetName, targetId, category, reason)
-	local webhook = Config.Reports and Config.Reports.DiscordWebhook
+	local webhook = (ServerConfig and ServerConfig.DiscordWebhook ~= "" and ServerConfig.DiscordWebhook)
+		or GetConvar("esx_report:webhook", "")
 	if not webhook or webhook == "" then
 		return
 	end

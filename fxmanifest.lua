@@ -8,7 +8,7 @@ lua54("yes")
 author("ESX Framework")
 name("esx_report")
 description("ESX Report System & Staff Analytics")
-version("1.4.0")
+version("1.5.0")
 legacyversion("1.16.0")
 
 shared_scripts({
@@ -27,6 +27,7 @@ client_scripts({
 })
 
 server_scripts({
+	"server/config.lua",
 	"@oxmysql/lib/MySQL.lua",
 	"server/helpers.lua",
 	"server/database.lua",

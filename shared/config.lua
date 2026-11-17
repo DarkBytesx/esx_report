@@ -62,7 +62,6 @@ Config.Reports = {
 		{ id = "question", label = "Question / Help" },
 		{ id = "other", label = "Other" },
 	},
-	DiscordWebhook = "", -- Optional Discord webhook URL for report logs
 }
 
 -- Camera Spectator Settings (used by Spectate button in ticket header)
