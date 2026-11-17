@@ -1,6 +1,6 @@
 # ESX Support Reports & Staff Analytics
 
-![Version](https://img.shields.io/badge/version-1.1.0-blue) ![License](https://img.shields.io/badge/license-GPL--3.0-green)
+![Version](https://img.shields.io/badge/version-1.2.0-blue) ![License](https://img.shields.io/badge/license-GPL--3.0-green)
 
 A dedicated player support ticketing and staff productivity analytics resource for FiveM servers running **ESX Legacy**.
 
@@ -44,14 +44,6 @@ Built with a direct 3-column Svelte 5 NUI workspace, proximity suspect detection
    }
    ```
 5. Restart your server. The resource will automatically migrate its required database tables (`admin_reports` and `admin_report_messages`).
-
----
-
-## 📚 Documentation Links
-
-* 📖 **[FEATURES.md](file:///c:/Users/Raven/Downloads/New%20Server%20Pack/txData/ESXLegacy_E69671.base/resources/[esx_addons]/esx_report/FEATURES.md)** — Comprehensive catalog of all player & staff features, UI breakdowns, and analytics specifications.
-* 🧠 **[NEED_TO_KNOW.md](file:///c:/Users/Raven/Downloads/New%20Server%20Pack/txData/ESXLegacy_E69671.base/resources/[esx_addons]/esx_report/NEED_TO_KNOW.md)** — Critical developer gotchas, NUI focus safety, JSON serialization traps, notification rules, and database schemas.
-* 📝 **[DEVLOG.md](file:///c:/Users/Raven/Downloads/New%20Server%20Pack/txData/ESXLegacy_E69671.base/resources/[esx_addons]/esx_report/DEVLOG.md)** — Technical development log of all architectural changes, bugfixes, and refactors.
 
 ---
 
