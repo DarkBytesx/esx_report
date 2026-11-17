@@ -1,10 +1,30 @@
 # ESX Support Reports & Staff Analytics
 
-![Version](https://img.shields.io/badge/version-1.3.0-blue) ![License](https://img.shields.io/badge/license-GPL--3.0-green)
+![Version](https://img.shields.io/badge/version-1.4.0-blue) ![License](https://img.shields.io/badge/license-GPL--3.0-green)
 
 A dedicated player support ticketing and staff productivity analytics resource for FiveM servers running **ESX Legacy**.
 
 Built with a direct 3-column Svelte 5 NUI workspace, proximity suspect detection, real-time ticket messaging, and staff performance leaderboards.
+
+---
+
+## 📸 Preview
+
+### 🎟️ Staff Tickets Workspace (`/reports`)
+> Complete 3-column resolution canvas with ticket filtering, real-time two-way messaging, accused player information, and historical proximity suspect snapshots.
+![Staff Tickets Workspace](screenshots/mainuireport.png)
+
+---
+
+### 📝 Player Report Submission (`/report`)
+> Clean modal dialog allowing players to choose categories, input optional suspect IDs, and describe issues. If they have an active ticket, `/report` directly opens their live conversation drawer.
+![Player Report Dialog](screenshots/SubmitReport.png)
+
+---
+
+### 📊 Staff Productivity Analytics
+> Real-time staff performance analytics featuring KPI resolution rates, category breakdowns, and top staff leaderboards (Claimers, Responders, Resolvers).
+![Staff Productivity Analytics](screenshots/analytics.png)
 
 ---
 
@@ -43,7 +63,7 @@ Built with a direct 3-column Svelte 5 NUI workspace, proximity suspect detection
        -- mod = true,
    }
    ```
-5. Restart your server. The resource will automatically migrate its required database tables (`admin_reports` and `admin_report_messages`).
+5. Restart your server. The resource will automatically migrate its required database tables (`admin_reports` and `admin_report_messages`) via `MySQL.ready`.
 
 ---
 
